@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'BrotherSignature';
+  src: url('/BrotherSignature-7BWnK.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+@layer base {
+  :root {
+    --background: 44 13% 96%;
+    --foreground: 25 5% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 25 5% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 5% 15%;
+    --primary: 25 5% 15%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 44 13% 91%;
+    --secondary-foreground: 25 5% 15%;
+    --muted: 44 13% 91%;
+    --muted-foreground: 25 5% 45%;
+    --accent: 44 13% 91%;
+    --accent-foreground: 25 5% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 44 13% 87%;
+    --input: 44 13% 87%;
+    --ring: 25 5% 15%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: #e5e7eb;
+  }
+  body {
+    @apply bg-stone-50 text-stone-900;
+  }
+  a {
+    @apply transition-colors duration-200;
+  }
+}
