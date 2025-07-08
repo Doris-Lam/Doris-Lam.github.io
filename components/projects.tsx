@@ -8,8 +8,8 @@ const projects = [
     description:
       "A sleek, responsive portfolio built with modern web technologies to showcase my projects and skills.",
     tags: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://doris-lam.github.io",
+    githubUrl: "https://github.com/Doris-Lam/Doris-Lam.github.io",
   },
   {
     title: "Snout",
