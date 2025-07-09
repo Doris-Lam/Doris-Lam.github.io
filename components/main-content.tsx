@@ -107,9 +107,14 @@ export function MainContent(): React.JSX.Element | null {
           </div>
 
           <div className="pt-6 space-y-4">
-            <button className="w-full bg-stone-700 hover:bg-stone-800 text-white py-3 rounded-lg dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900">
-              Download my Resume
-            </button>
+            <a
+              href="/Doris-Lam_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-stone-700 hover:bg-stone-800 text-white py-3 rounded-lg dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900 text-center"
+            >
+              View my Resume
+            </a>
 
             <div className="space-y-2 text-sm">
               {/* <p className="text-stone-700">
