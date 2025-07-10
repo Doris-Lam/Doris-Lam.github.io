@@ -1,12 +1,16 @@
 import type { NextConfig } from "next";
 
-// No assetPrefix or basePath needed for root-level GitHub Pages deployment (doris-lam.github.io)
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
+const repo = 'doris-lam.github.io'; // your repo name
+
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {
-    unoptimized: true
-  }
+    unoptimized: true,
+    ...(isGithubPages ? { path: `/${repo}/_next/image` } : {}),
+  },
+  ...(isGithubPages ? { basePath: `/${repo}`, assetPrefix: `/${repo}/` } : {}),
 };
 
 export default nextConfig;
