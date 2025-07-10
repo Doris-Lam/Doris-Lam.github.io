@@ -43,7 +43,7 @@ export function MainContent(): React.JSX.Element | null {
               SWE Intern @{" "}
               <a href="https://hormonefit.ca" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                 <span className="dark:text-stone-100">
-                🏥 HormoneFit
+                🏥 HormoneFit (HOPE Fertility & Reproductive Medicine Centre)
                 </span>
               </a>{" "}
               (Summer 2025)
