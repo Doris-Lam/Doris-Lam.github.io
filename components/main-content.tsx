@@ -95,7 +95,7 @@ export function MainContent(): React.JSX.Element | null {
                 <span className="text-stone-400 dark:text-stone-500 mt-1">•</span>
                 <p className="text-stone-700 dark:text-stone-200 text-sm leading-relaxed">
                   Organized {" "}
-                  <a href="https://wizrobotics.com" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+                  <a href="https://www.yrhacks.ca" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                     <span className="dark:text-stone-100">
                     👾 YRHacks 
                     </span>
