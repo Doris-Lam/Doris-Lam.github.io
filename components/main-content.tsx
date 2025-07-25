@@ -36,19 +36,33 @@ export function MainContent(): React.JSX.Element | null {
             </p>
           </div>
 
-        <div className="space-y-6 text-center">
+          <div className="text-center">
+            <div className="flex items-center justify-center space-x-2">
+              <span className="w-2 h-2 bg-green-500 dark:bg-green-400 rounded-full"></span>
+              <p className="text-stone-700 dark:text-stone-200">
+                SWE Intern @{" "}
+                <a href="https://hormonefit.ca" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+                  <span className="dark:text-stone-100">
+                  🏥 HormoneFit
+                  </span>
+                </a>{" "}
+                (Summer 2025)
+              </p>
+            </div>
+
           <div className="flex items-center justify-center space-x-2">
-            <span className="w-2 h-2 bg-green-500 dark:bg-green-400 rounded-full"></span>
+            <span className="w-2 h-2 bg-purple-500 dark:bg-purple-400 rounded-full"></span>
             <p className="text-stone-700 dark:text-stone-200">
-              SWE Intern @{" "}
-              <a href="https://hormonefit.ca" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+              Incoming SWE Intern @{" "}
+              <a href="https://www.voxer.com/" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                 <span className="dark:text-stone-100">
-                🏥 HormoneFit
+                📞 Voxer
                 </span>
               </a>{" "}
-              (Summer 2025)
+              (Fall 2025)
             </p>
           </div>
+          
 
           <div className="pt-4">
             <p className="text-stone-900 font-medium italic mb-4 dark:text-stone-100">Recently:</p>
