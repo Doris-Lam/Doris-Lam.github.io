@@ -4,12 +4,20 @@ import { ExternalLink, Github } from "lucide-react"
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "VoiceVitals",
     description:
-      "A sleek, responsive portfolio built with modern web technologies to showcase my projects and skills.",
-    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+      "AI-powered voice recognition platform for health tracking. Features speech-to-text, symptom analysis, vital monitoring, and health insights powered by Google Gemini.",
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Google Gemini AI", "Web Speech API"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Doris-Lam/VoiceVitals",
+  },
+  {
+    title: "Make It What You Want",
+    description:
+      "Dynamic website generator that creates unique, interactive HTML pages on-demand using AI. Every URL path generates a completely different experience with AI-powered content generation.",
+    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Google Gemini AI", "Unsplash API", "Framer Motion"],
+    liveUrl: "https://makeitwhatyouwant.vercel.app",
+    githubUrl: "https://github.com/Doris-Lam/makeitwhatyouwant",
   },
   {
     title: "Snout",
@@ -42,7 +50,7 @@ export function Projects(): React.JSX.Element | null {
   useEffect(() => { setMounted(true); }, []);
   if (!mounted) return null;
   return (
-    <div className="w-full py-7 bg-stone-50 dark:bg-stone-900">
+    <div className="w-full py-7">
       <div className="w-full max-w-2xl mx-auto px-6">
         <div className="text-center mb-8">
           <h2 className="text-xl text-stone-900 dark:text-stone-100 mb-4">Featured Projects</h2>

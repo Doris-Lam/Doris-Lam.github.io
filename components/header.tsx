@@ -9,10 +9,13 @@ import Link from "next/link"
 export function Header(): React.JSX.Element {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    const timer = setTimeout(() => setMounted(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <header className="w-full py-7 bg-stone-50 dark:bg-stone-900">
+    <header className="w-full py-7">
       <div className="w-full max-w-2xl mx-auto px-6">
         <div className="flex items-center justify-between">
           <Link href="/" className="font-brother-signature text-5xl text-stone-800 hover:text-stone-600 dark:text-stone-100 dark:hover:text-stone-300 transition-colors">
