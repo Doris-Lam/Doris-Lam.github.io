@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "next/image"
 
 export function About(): React.JSX.Element {
     return (
@@ -39,7 +38,9 @@ export function About(): React.JSX.Element {
   
             <div className="relative">
               <div className="aspect-square bg-neutral-100 rounded-2xl overflow-hidden">
-                <Image src="/placeholder.svg" alt="Profile" width={500} height={500} className="w-full h-full object-cover" />
+                <div className="w-full h-full flex items-center justify-center text-neutral-400">
+                  <span className="text-4xl">👋</span>
+                </div>
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-neutral-900 rounded-2xl opacity-10" />
               <div className="absolute -top-6 -left-6 w-24 h-24 bg-neutral-300 rounded-full opacity-20" />

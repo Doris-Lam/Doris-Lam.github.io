@@ -15,7 +15,7 @@ export function MainContent(): React.JSX.Element | null {
           <div className="flex justify-center mb-2">
             <div className="rounded-full overflow-hidden border-2 border-stone-200 dark:border-stone-700 flex items-center justify-center">
               <Image
-                src="/new.png"
+                src="/icons/new.png"
                 alt="Doris Lam"
                 width={95}
                 height={95}
@@ -109,7 +109,7 @@ export function MainContent(): React.JSX.Element | null {
                 <span className="text-stone-400 dark:text-stone-500 mt-1">•</span>
                 <p className="text-stone-700 dark:text-stone-200 text-sm leading-relaxed">
                   Organized {" "}
-                  <a href="https://www.yrhacks.ca" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+                  <a href="https://wizrobotics.com" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                     <span className="dark:text-stone-100">
                     👾 YRHacks 
                     </span>
@@ -121,13 +121,10 @@ export function MainContent(): React.JSX.Element | null {
           </div>
 
           <div className="pt-6 space-y-4">
-            <a
-              href="/Doris-Lam_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full bg-stone-700 hover:bg-stone-800 text-white py-3 rounded-lg dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900 text-center"
-            >
-              View my Resume
+            <a href="/Doris-Lam_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <button className="w-full bg-stone-700 hover:bg-stone-800 text-white py-3 rounded-lg dark:bg-stone-200 dark:hover:bg-stone-300 dark:text-stone-900">
+                Download my Resume
+              </button>
             </a>
 
             <div className="space-y-2 text-sm">
