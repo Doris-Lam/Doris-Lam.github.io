@@ -8,7 +8,7 @@ const projects = [
     description:
       "AI-powered voice recognition platform for health tracking. Features speech-to-text, symptom analysis, vital monitoring, and health insights powered by Google Gemini.",
     tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Google Gemini AI", "Web Speech API"],
-    liveUrl: "#",
+    liveUrl: "https://voice-vitals.vercel.app",
     githubUrl: "https://github.com/Doris-Lam/VoiceVitals",
   },
   {

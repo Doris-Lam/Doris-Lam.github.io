@@ -28,7 +28,7 @@ export function MainContent(): React.JSX.Element | null {
             <span className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full"></span>
             <p className="text-stone-700 dark:text-stone-200">
               Computer Engineering @{" "}
-              <a href="https://uwaterloo.ca/engineering" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+              <a href="https://uwaterloo.ca/engineering" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                 <span className="dark:text-stone-100">
                 🎓 UWaterloo
                 </span>
@@ -40,7 +40,7 @@ export function MainContent(): React.JSX.Element | null {
             <span className="w-2 h-2 bg-purple-500 dark:bg-purple-400 rounded-full"></span>
             <p className="text-stone-700 dark:text-stone-200">
               SWE Intern @{" "}
-              <a href="https://www.voxer.com/" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-medium hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+              <a href="https://www.voxer.com/" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                 <span className="dark:text-stone-100">
                 📞 Voxer
                 </span>
@@ -65,13 +65,29 @@ export function MainContent(): React.JSX.Element | null {
 
           <div className="pt-4">
             <p className="text-stone-900 font-medium italic mb-4 dark:text-stone-100">Recently:</p>
+
+            
         
             <div className="space-y-3 text-left max-w-lg mx-auto">
-                          <div className="flex items-start space-x-3">
-                <span className="text-stone-400 dark:text-stone-500 mt-1">•</span>
+
+            <div className="flex items-start space-x-3">
+                <span className="text-stone-400 dark:text-stone-500 flex-shrink-0 leading-none">•</span>
                 <p className="text-stone-700 dark:text-stone-200 text-sm leading-relaxed">
-                  Built a {" "}
-                                  <a href="https://github.com/Doris-Lam/makeitwhatyouwant" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+                  Built an {" "}
+                    <a href="https://voice-vitals.vercel.app" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+                  <span className="dark:text-stone-100">
+                    🎤 AI-voiced health
+                  </span>
+                </a>{" "}
+                  tracking platform
+                </p>
+              </div>
+
+                <div className="flex items-start space-x-3">
+                <span className="text-stone-400 dark:text-stone-500 flex-shrink-0 leading-none">•</span>
+                <p className="text-stone-700 dark:text-stone-200 text-sm leading-relaxed">
+                  Developed a {" "}
+                    <a href="https://makeitwhatuwant.vercel.app" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                   <span className="dark:text-stone-100">
                     🌟 Gemini-powered website generator 
                   </span>
@@ -81,23 +97,10 @@ export function MainContent(): React.JSX.Element | null {
               </div>
 
               <div className="flex items-start space-x-3">
-                <span className="text-stone-400 dark:text-stone-500 mt-1">•</span>
-                <p className="text-stone-700 dark:text-stone-200 text-sm leading-relaxed">
-                  Built an {" "}
-                                  <a href="https://github.com/Doris-Lam/VoiceVitals" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
-                  <span className="dark:text-stone-100">
-                    🎤 AI-voiced health
-                  </span>
-                </a>{" "}
-                  tracking platform
-                </p>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <span className="text-stone-400 dark:text-stone-500 mt-1">•</span>
+                <span className="text-stone-400 dark:text-stone-500 flex-shrink-0 leading-none">•</span>
                 <p className="text-stone-700 dark:text-stone-200 text-sm leading-relaxed">
                   Built{" "}
-                                  <a href="https://github.com/Doris-Lam/Snout" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
+                    <a href="https://github.com/Doris-Lam/Snout" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
                   <span className="dark:text-stone-100">
                     🐶 Snout,
                   </span>
@@ -107,7 +110,7 @@ export function MainContent(): React.JSX.Element | null {
               </div>
 
               <div className="flex items-start space-x-3">
-                <span className="text-stone-400 dark:text-stone-500 mt-1">•</span>
+                <span className="text-stone-400 dark:text-stone-500 flex-shrink-0 leading-none">•</span>
                 <p className="text-stone-700 dark:text-stone-200 text-sm leading-relaxed">
                   Created a CV-powered{" "}
                   <a href="https://devpost.com/software/signspeak-kgufm1" target="_blank" rel="noopener noreferrer" className="text-stone-900 font-bold hover:underline dark:hover:underline dark:decoration-stone-400 underline-offset-2 decoration-2">
