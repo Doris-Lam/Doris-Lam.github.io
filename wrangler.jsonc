@@ -2,9 +2,6 @@
   // Cloudflare Workers Sites/Assets configuration for static Next.js export
   "name": "personal-website",
   "compatibility_date": "2025-10-16",
-  "build": {
-    "command": "npm run export"
-  },
   "assets": {
     "directory": "./out"
   }
