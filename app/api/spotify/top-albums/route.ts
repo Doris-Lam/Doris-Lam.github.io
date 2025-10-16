@@ -21,15 +21,27 @@ async function getTopAlbums() {
     return { albums: [] }
   }
 
-  return {
-    albums: data.topalbums.album.map((album: any) => ({
-      name: album.name,
-      artist: album.artist.name,
-      image: album.image[3]?.["#text"] || album.image[2]?.["#text"] || album.image[1]?.["#text"],
-      url: album.url,
-      playcount: album.playcount,
-    })),
+  type LastFmAlbum = {
+    name: string
+    artist: { name: string }
+    image: Array<{ [key: string]: string }>
+    url: string
+    playcount: string
   }
+
+  const albums = (data.topalbums.album as LastFmAlbum[]).map((album) => ({
+    name: album.name,
+    artist: album.artist.name,
+    image:
+      (album.image?.[3]?.["#text"] as string | undefined) ||
+      (album.image?.[2]?.["#text"] as string | undefined) ||
+      (album.image?.[1]?.["#text"] as string | undefined) ||
+      "",
+    url: album.url,
+    playcount: album.playcount,
+  }))
+
+  return { albums }
 }
 
 export async function GET() {

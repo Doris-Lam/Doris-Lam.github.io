@@ -48,7 +48,9 @@ async function getNowPlaying() {
   return {
     isPlaying: true,
     title: data.item.name,
-    artist: data.item.artists.map((artist: any) => artist.name).join(", "),
+    artist: Array.isArray(data.item.artists)
+      ? data.item.artists.map((artist: { name: string }) => artist.name).join(", ")
+      : "",
     album: data.item.album.name,
     albumArt: data.item.album.images[0]?.url,
     songUrl: data.item.external_urls.spotify,

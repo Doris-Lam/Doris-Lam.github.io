@@ -63,7 +63,7 @@ export function NowPlaying() {
       href={track.songUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative z-50 flex items-center gap-3 px-3 sm:px-4 py-3 border-2 border-stone-900 dark:border-stone-100 rounded-lg bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 dark:hover:bg-stone-700 hover:scale-[1.02] sm:hover:scale-105 hover:shadow-lg transition-all duration-200 group cursor-pointer"
+      className="relative z-50 flex items-center gap-3 px-3 sm:px-4 py-3 border-2 border-stone-900 dark:border-stone-100 rounded-lg bg-stone-50 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 hover:scale-[1.02] sm:hover:scale-105 hover:shadow-lg transition-all duration-200 group cursor-pointer"
     >
       <div className="relative">
         <img

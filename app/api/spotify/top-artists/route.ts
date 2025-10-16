@@ -71,8 +71,14 @@ async function getTopArtists() {
   const { access_token } = await getSpotifyAccessToken()
 
   // Fetch Spotify images for each artist
+  type LastFmArtist = {
+    name: string
+    url: string
+    playcount: string
+  }
+
   const artistsWithImages = await Promise.all(
-    data.topartists.artist.map(async (artist: any) => {
+    (data.topartists.artist as LastFmArtist[]).map(async (artist) => {
       const spotifyImage = await getArtistImageFromSpotify(artist.name, access_token)
       return {
         name: artist.name,

@@ -774,7 +774,7 @@ export function Projects(): React.JSX.Element {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 rounded-xl overflow-hidden hover:bg-stone-50 dark:hover:bg-stone-800 transition-all duration-200 cursor-pointer"
+              className="bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 rounded-xl overflow-hidden hover:bg-stone-100 dark:hover:bg-stone-950 transition-all duration-200 cursor-pointer"
               onClick={() => setSelectedProject(index)}
             >
               <div className="flex flex-col md:flex-row">
@@ -812,7 +812,7 @@ export function Projects(): React.JSX.Element {
                         href={project.liveUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+                        className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
                         aria-label="View Project"
                         onClick={(e) => e.stopPropagation()}
                       >
@@ -822,7 +822,7 @@ export function Projects(): React.JSX.Element {
                         href={project.githubUrl} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+                        className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
                         aria-label="View on GitHub"
                         onClick={(e) => e.stopPropagation()}
                       >
@@ -891,7 +891,7 @@ export function Projects(): React.JSX.Element {
                 
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-3 right-3 sm:top-4 sm:right-4 p-2 bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+                  className="absolute top-3 right-3 sm:top-4 sm:right-4 p-2 bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 rounded-lg hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
                 >
                   <X className="h-5 w-5 text-stone-900 dark:text-stone-100" />
                 </button>
@@ -912,7 +912,7 @@ export function Projects(): React.JSX.Element {
                       href={projects[selectedProject].liveUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+                      className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
                       aria-label="View Project"
                     >
                       <ExternalLink className="h-5 w-5 text-stone-700 dark:text-stone-300" />
@@ -921,7 +921,7 @@ export function Projects(): React.JSX.Element {
                       href={projects[selectedProject].githubUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+                      className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
                       aria-label="View on GitHub"
                     >
                       <Github className="h-5 w-5 text-stone-700 dark:text-stone-300" />

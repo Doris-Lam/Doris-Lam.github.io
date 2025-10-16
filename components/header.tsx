@@ -23,7 +23,7 @@ export function Header(): React.JSX.Element {
           {/* Home Icon */}
           <Link 
             href="/" 
-            className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+            className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
           >
             <Home className="w-5 h-5 text-stone-900 dark:text-stone-100" />
           </Link>
@@ -32,13 +32,13 @@ export function Header(): React.JSX.Element {
           <nav className="hidden sm:flex items-center gap-2 md:gap-3">
             <Link 
               href="/projects" 
-              className="px-6 py-2 rounded-full border-2 border-stone-900 dark:border-stone-100 text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors text-sm font-light"
+              className="px-6 py-2 rounded-full border-2 border-stone-900 dark:border-stone-100 text-stone-900 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors text-sm font-light"
             >
               work
             </Link>
             <Link 
               href="/misc" 
-              className="px-6 py-2 rounded-full border-2 border-stone-900 dark:border-stone-100 text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors text-sm font-light"
+              className="px-6 py-2 rounded-full border-2 border-stone-900 dark:border-stone-100 text-stone-900 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors text-sm font-light"
             >
               more
             </Link>
@@ -46,7 +46,7 @@ export function Header(): React.JSX.Element {
               href="/resume/Doris_Lam_Resume.pdf" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 rounded-full border-2 border-stone-900 dark:border-stone-100 text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors text-sm font-light"
+              className="px-6 py-2 rounded-full border-2 border-stone-900 dark:border-stone-100 text-stone-900 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors text-sm font-light"
             >
               resume
             </a>
@@ -56,18 +56,18 @@ export function Header(): React.JSX.Element {
           <div className="flex items-center gap-2 md:gap-3">
             <button 
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
             >
               {mounted && (theme === "dark" ? <Sun className="w-5 h-5 text-stone-100" /> : <Moon className="w-5 h-5 text-stone-900" />)}
             </button>
 
-            <div className="hidden xs:block">
+            <div className="block">
               <MusicPlayer />
             </div>
 
             {/* Mobile menu button */}
             <button
-              className="sm:hidden w-10 h-10 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="sm:hidden w-10 h-10 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
               aria-label="Toggle menu"
               onClick={() => setIsMenuOpen((v) => !v)}
             >
@@ -87,14 +87,14 @@ export function Header(): React.JSX.Element {
               <nav className="flex flex-col">
                 <Link 
                   href="/projects"
-                  className="px-4 py-3 border-b-2 border-stone-900/10 dark:border-stone-100/10 text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors text-sm"
+                  className="px-4 py-3 border-b-2 border-stone-900/10 dark:border-stone-100/10 text-stone-900 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors text-sm"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   work
                 </Link>
                 <Link 
                   href="/misc"
-                  className="px-4 py-3 border-b-2 border-stone-900/10 dark:border-stone-100/10 text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors text-sm"
+                  className="px-4 py-3 border-b-2 border-stone-900/10 dark:border-stone-100/10 text-stone-900 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors text-sm"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   more
@@ -103,7 +103,7 @@ export function Header(): React.JSX.Element {
                   href="/resume/Doris_Lam_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-3 text-stone-900 dark:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors text-sm"
+                  className="px-4 py-3 text-stone-900 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors text-sm"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   resume

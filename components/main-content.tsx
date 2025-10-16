@@ -179,7 +179,7 @@ export function MainContent(): React.JSX.Element {
                 className="relative"
               >
                 <div 
-                  className="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-50 dark:hover:bg-stone-800 transition-all duration-200 cursor-pointer"
+                  className="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-950 transition-all duration-200 cursor-pointer"
                   onClick={() => setExpandedRole(expandedRole === index ? null : index)}
                 >
                   <div className="flex items-center gap-3">
