@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next build && next export",
-    "deploy": "npm run build && touch out/.nojekyll",
-    "deploy:cf": "npm run export && npx --yes wrangler deploy --assets=./out"
+    "deploy": "npm run build && touch out/.nojekyll"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",
