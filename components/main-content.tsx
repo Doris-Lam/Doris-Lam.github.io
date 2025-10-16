@@ -248,7 +248,7 @@ export function MainContent(): React.JSX.Element {
             href="https://www.linkedin.com/in/dorislam23" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-5 h-5 text-stone-700 dark:text-stone-300" />
@@ -257,7 +257,7 @@ export function MainContent(): React.JSX.Element {
             href="https://github.com/Doris-Lam" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
             aria-label="GitHub"
           >
             <Github className="w-5 h-5 text-stone-700 dark:text-stone-300" />
@@ -265,7 +265,7 @@ export function MainContent(): React.JSX.Element {
           
           <a 
             href="mailto:doris.lam@uwaterloo.ca"
-            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
             aria-label="Email"
           >
             <Mail className="w-5 h-5 text-stone-700 dark:text-stone-300" />
@@ -275,7 +275,7 @@ export function MainContent(): React.JSX.Element {
             href="https://devpost.com/Doryimoo" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+            className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
             aria-label="Devpost"
           >
             <svg 
@@ -320,7 +320,7 @@ export function MainContent(): React.JSX.Element {
               href="https://www.linkedin.com/in/dorislam23" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5 text-stone-700 dark:text-stone-300" />
@@ -329,7 +329,7 @@ export function MainContent(): React.JSX.Element {
               href="https://github.com/Doris-Lam" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
               aria-label="GitHub"
             >
               <Github className="w-5 h-5 text-stone-700 dark:text-stone-300" />
@@ -337,7 +337,7 @@ export function MainContent(): React.JSX.Element {
             
             <a 
               href="mailto:doris.lam@uwaterloo.ca"
-              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
               aria-label="Email"
             >
               <Mail className="w-5 h-5 text-stone-700 dark:text-stone-300" />
@@ -347,7 +347,7 @@ export function MainContent(): React.JSX.Element {
               href="https://devpost.com/Doryimoo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
+              className="p-2 rounded-lg border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
               aria-label="Devpost"
             >
               <svg 

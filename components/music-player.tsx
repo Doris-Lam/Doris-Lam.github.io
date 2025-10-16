@@ -36,7 +36,7 @@ export function MusicPlayer() {
       
       <button
         onClick={toggleMusic}
-        className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
+        className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
         aria-label={isPlaying ? "Pause music" : "Play music"}
       >
         {isPlaying ? (

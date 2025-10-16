@@ -22,7 +22,7 @@ export function Header(): React.JSX.Element {
           {/* Home Icon */}
           <Link 
             href="/" 
-            className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
+            className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
           >
             <Home className="w-5 h-5 text-stone-900 dark:text-stone-100" />
           </Link>
@@ -55,7 +55,7 @@ export function Header(): React.JSX.Element {
           <div className="flex items-center gap-2 md:gap-3">
             <button 
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
             >
               {mounted && (theme === "dark" ? <Sun className="w-5 h-5 text-stone-100" /> : <Moon className="w-5 h-5 text-stone-900" />)}
             </button>
@@ -66,7 +66,7 @@ export function Header(): React.JSX.Element {
 
             {/* Mobile menu button */}
             <button
-              className="sm:hidden w-10 h-10 rounded-full border-2 border-stone-900 dark:border-stone-100 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
+              className="sm:hidden w-10 h-10 rounded-full border-2 border-stone-900 dark:border-stone-100 bg-stone-100 dark:bg-stone-800 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors"
               aria-label="Toggle menu"
               onClick={() => setIsMenuOpen((v) => !v)}
             >
