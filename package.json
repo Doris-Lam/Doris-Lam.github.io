@@ -11,11 +11,15 @@
     "deploy": "npm run build && touch out/.nojekyll"
   },
   "dependencies": {
+    "framer-motion": "^12.23.24",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.525.0",
     "next": "15.3.4",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
+    "react-type-animation": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

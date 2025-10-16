@@ -43,10 +43,34 @@ body {
   * {
     border-color: #e5e7eb;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-stone-50 text-stone-900;
   }
   a {
-    @apply transition-colors duration-200;
+    @apply transition-all duration-200;
+  }
+  button {
+    @apply transition-all duration-200;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
   }
 }
