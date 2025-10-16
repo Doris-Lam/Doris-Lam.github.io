@@ -73,7 +73,7 @@ export function Blog(): React.JSX.Element {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="block p-5 sm:p-6 border-2 border-stone-900 dark:border-stone-100 rounded-xl hover:bg-stone-100 dark:hover:bg-stone-950 transition-colors"
+              className="block p-5 sm:p-6 border-2 border-stone-900 dark:border-stone-100 rounded-xl bg-stone-50 dark:bg-stone-800 hover:bg-stone-100 dark:hover:bg-stone-950 transition-colors"
             >
               <div className="flex items-start justify-between gap-3 sm:gap-4">
                 <h3 className="text-lg sm:text-xl font-medium text-stone-900 dark:text-stone-100">

@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { PageTransition } from "@/components/page-transition";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { Doodles } from "@/components/doodles";
+import { ConditionalDoodles } from "@/components/conditional-doodles";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,9 +33,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="min-h-screen bg-[#faf9f7] text-stone-900 dark:bg-stone-900 dark:text-stone-100 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] transition-colors duration-300">
-            <Doodles />
+            <ConditionalDoodles />
             <div className="relative z-10 flex flex-col min-h-screen">
               <Header />
               <div className="flex-1">

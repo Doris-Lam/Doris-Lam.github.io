@@ -12,8 +12,7 @@ export function Header(): React.JSX.Element {
   const [mounted, setMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
-    const timer = setTimeout(() => setMounted(true), 50);
-    return () => clearTimeout(timer);
+    setMounted(true);
   }, []);
 
   return (
