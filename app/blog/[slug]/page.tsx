@@ -49,11 +49,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   }
 
   return (
-    <div className="min-h-screen bg-[#faf9f7] text-stone-900 flex flex-col dark:bg-stone-900 dark:text-stone-100 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:20px_20px] transition-colors duration-300">
-      <Doodles />
-      <div className="relative z-10">
-        <Header />
-        <main className="w-full flex-1 px-4 sm:px-6 pt-14 md:pt-16 pb-12">
+    <main className="w-full flex-1 px-4 sm:px-6 pt-14 md:pt-16 pb-12">
           <div className="w-full max-w-3xl mx-auto space-y-8">
             {/* Back button */}
             <Link 
@@ -141,10 +137,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               </Link>
             </div>
           </div>
-        </main>
-        <Footer />
-      </div>
-    </div>
+    </main>
   )
 }
 
