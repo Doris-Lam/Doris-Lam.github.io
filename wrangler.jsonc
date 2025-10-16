@@ -3,7 +3,7 @@
   "name": "personal-website",
   "compatibility_date": "2025-10-16",
   "build": {
-    "command": "npm run build"
+    "command": "npm run export"
   },
   "assets": {
     "directory": "./out"
