@@ -75,18 +75,13 @@ export function Blog(): React.JSX.Element {
               href={`/blog/${post.slug}`}
               className="block p-5 sm:p-6 border-2 border-stone-900 dark:border-stone-100 rounded-xl hover:bg-stone-100 dark:hover:bg-stone-950 transition-colors"
             >
-              <div className="space-y-2">
-                <div className="flex items-start justify-between gap-3 sm:gap-4">
-                  <h3 className="text-lg sm:text-xl font-medium text-stone-900 dark:text-stone-100">
-                    {post.title}
-                  </h3>
-                  <span className="text-[11px] sm:text-xs text-stone-500 uppercase tracking-wider flex-shrink-0">
-                    {post.date}
-                  </span>
-                </div>
-                <p className="text-sm text-stone-600 dark:text-stone-400">
-                  {post.excerpt}
-                </p>
+              <div className="flex items-start justify-between gap-3 sm:gap-4">
+                <h3 className="text-lg sm:text-xl font-medium text-stone-900 dark:text-stone-100">
+                  {post.title}
+                </h3>
+                <span className="text-[11px] sm:text-xs text-stone-500 uppercase tracking-wider flex-shrink-0">
+                  {post.date}
+                </span>
               </div>
             </Link>
           ))

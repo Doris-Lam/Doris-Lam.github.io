@@ -48,7 +48,7 @@ export default function MiscPage() {
               <TopAlbums />
               
               <div className="text-center text-sm text-stone-500 dark:text-stone-500 italic">
-                if you've made it this far, feel free to give <span className="bg-orange-200 dark:bg-orange-900/40 px-1.5 py-0.5 rounded">me</span> music recommendations! :)
+                if you've made it this far, feel free to give me music recommendations! :)
               </div>
             </section>
       </div>
