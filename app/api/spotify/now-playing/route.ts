@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
 
+export const runtime = 'edge'
 export const dynamic = 'force-dynamic'
 
 const client_id = process.env.SPOTIFY_CLIENT_ID

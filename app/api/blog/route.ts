@@ -1,53 +1,30 @@
 import { NextResponse } from "next/server"
-import fs from "fs"
-import path from "path"
-import matter from "gray-matter"
 
-export const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 
-interface BlogPost {
-  slug: string
-  title: string
-  date: string
-  excerpt: string
-  content: string
-}
-
-function getBlogPosts(): BlogPost[] {
-  const blogDirectory = path.join(process.cwd(), "content/blog")
-  
-  // Check if directory exists
-  if (!fs.existsSync(blogDirectory)) {
-    return []
-  }
-
-  const filenames = fs.readdirSync(blogDirectory)
-  const posts = filenames
-    .filter((filename) => filename.endsWith(".md"))
-    .map((filename) => {
-      const filePath = path.join(blogDirectory, filename)
-      const fileContents = fs.readFileSync(filePath, "utf8")
-      const { data, content } = matter(fileContents)
-
-      return {
-        slug: filename.replace(/\.md$/, ""),
-        title: data.title || "",
-        date: data.date || "",
-        excerpt: data.excerpt || "",
-        content: content,
-      }
-    })
-
-  return posts
-}
+// Static blog post metadata (content is read from markdown files at build time in the page component)
+const blogPosts = [
+  {
+    slug: "lessons-learned-alone",
+    title: "lessons learned by being alone",
+    date: "AUG 2025",
+    excerpt: "For a good part of my life, I had insane FOMO. I hated missing out on plans, on people, on moments.",
+    content: "",
+  },
+  {
+    slug: "why-i-build-things",
+    title: "comparison is the thief of joy",
+    date: "OCT 2025",
+    excerpt: "For most of my life, I compared myself to everyone around me. In high school, I did not really know what I wanted to do.",
+    content: "",
+  },
+]
 
 export async function GET() {
   try {
-    const posts = getBlogPosts()
-    return NextResponse.json({ posts })
+    return NextResponse.json({ posts: blogPosts })
   } catch (error) {
     console.error("Error fetching blog posts:", error)
     return NextResponse.json({ posts: [] }, { status: 500 })
   }
 }
-

@@ -37,6 +37,21 @@ function getBlogPost(slug: string): BlogPost | null {
   }
 }
 
+export async function generateStaticParams() {
+  const blogDirectory = path.join(process.cwd(), "content/blog")
+  
+  if (!fs.existsSync(blogDirectory)) {
+    return []
+  }
+
+  const filenames = fs.readdirSync(blogDirectory)
+  return filenames
+    .filter((filename) => filename.endsWith(".md"))
+    .map((filename) => ({
+      slug: filename.replace(/\.md$/, ""),
+    }))
+}
+
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const post = getBlogPost(slug)
