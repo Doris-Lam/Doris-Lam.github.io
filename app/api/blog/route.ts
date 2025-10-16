@@ -12,7 +12,7 @@ const blogPosts = [
     content: "",
   },
   {
-    slug: "why-i-build-things",
+    slug: "comparison",
     title: "comparison is the thief of joy",
     date: "OCT 2025",
     excerpt: "For most of my life, I compared myself to everyone around me. In high school, I did not really know what I wanted to do.",

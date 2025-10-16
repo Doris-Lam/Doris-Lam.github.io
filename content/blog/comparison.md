@@ -7,9 +7,9 @@ date: "OCT 2025"
 
 When I look back at high school, I see a version of myself that was always looking around, constantly measuring against the people beside me. I did not really know what I wanted, so I gravitated toward paths that seemed prestigious, like STEM classes, coding programs, and math competitions. I did these things not because they excited me, but because I thought they would make me look competent and ambitious. I wanted to appear capable, like I had everything figured out, even when I did not.
 
-I remember grade seven coding classes clearly. I would sit at the computer, staring at the blank screen, unsure what to type. I couldn't seem to understand the concepts, felt slow and frustrated. I would leave the class feeling defeated, thinking maybe I just was not cut out for this. Years later, when I returned to programming on my own terms, I discovered a genuine love for it. That small realization hit me hard. I had spent so much energy chasing approval rather than curiosity and it showed me how quietly destructive comparison could be.
+I remember grade seven coding classes clearly. I would sit at the computer, staring at the blank screen, unsure what to type. Other students seemed to understand the concepts effortlessly while I felt slow and frustrated. I would leave the class feeling defeated, thinking maybe I just was not cut out for this. Years later, when I returned to programming on my own terms, I discovered a genuine love for it. That small realization hit me hard. I had spent so much energy chasing approval rather than curiosity and it showed me how quietly destructive comparison could be.
 
-Even outside coding, I followed similar patterns. I joined clubs and extracurriculars, not because I was passionate, but because I assumed they would make me look good. At the time, I convinced myself that this was ambition, but in reality, it was fear. Fear of being ordinary, fear of being left behind, fear of being seen as less than.
+Even outside coding, I followed similar patterns. I joined math competitions and science programs, not because I was passionate, but because I assumed they would make me look good. At the time, I convinced myself that this was ambition, but in reality, it was fear. Fear of being ordinary, fear of being left behind, fear of being seen as less than.
 
 ## the self-destructive cycle
 
@@ -23,7 +23,9 @@ I also remember one calculus test. My grade was lower than I expected. It was no
 
 University intensified these pressures. At the University of Waterloo, I was surrounded by brilliant and driven peers. Some had co-ops in California, others were conducting research, and some were founding startups before turning twenty. It seemed like everyone had a plan while I was scrambling to keep up.
 
-I remember a period when I had sent out countless co-op applications and heard nothing back for a long time. I would sit on the floor of my dorm, laptop on my knees, scrolling through emails and LinkedIn profiles of my peers who were already receiving offers. Every rejection or silence made me question myself. I compared my experiences and accomplishments to everyone else’s and felt like I was falling behind, like I must be doing something wrong, or that I was simply not smart enough. I felt drained, anxious, and inadequate even though I had worked hard and done everything I could. It was during this time that I realized how much pressure I had internalized and how little of it actually reflected my own values and growth.
+I spent late nights scrolling through LinkedIn, comparing resumes and achievements, asking myself if mine were impressive enough. Sometimes I pursued opportunities for the reputation rather than personal or professional growth. Even when I accomplished something meaningful, I struggled to feel proud because my mind was already shifting to the next goal.
+
+I remember one evening sitting on the floor of my dorm, laptop on my knees, endlessly checking emails for co-op postings. I felt drained, anxious, and inadequate even though I had worked hard and earned every opportunity I had. It was then that I began to realize how much pressure I had internalized and how little of it actually reflected what I truly valued.
 
 ## psychological insight
 
@@ -37,6 +39,6 @@ The turning point came when I started asking myself difficult questions. Am I pu
 
 The most important lesson I have learned is that comparison will always exist, but it does not have to control me. Ambition is important, but reflection is equally important. Growth is valuable, but recognizing your own accomplishments is just as critical. My worth is not tied to someone else's co-op, resume, or internship. It is rooted in my own skills, experiences, and values.
 
-I am still learning this. I still feel that familiar wave of doubt when scrolling through LinkedIn. I still wonder if I am doing enough. But I have started pausing, reflecting, and appreciating the progress I have made. I celebrate small wins, like finishing a project I care about, learning a new skill, or simply taking time to slow down.
+I am still learning this. I still feel that familiar pang of doubt when scrolling through LinkedIn. I still wonder if I am doing enough. But I have started pausing, reflecting, and appreciating the progress I have made. I celebrate small wins, like finishing a project I care about, learning a new skill, or simply taking time to slow down.
 
 Growth is not a race. It is a journey, and it is okay for it to take time. I am learning that my path does not have to look like anyone else's. I am learning to measure success not by comparison, but by my own growth, my own values, and my own joy.
