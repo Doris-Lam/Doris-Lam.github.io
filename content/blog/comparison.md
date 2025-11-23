@@ -1,5 +1,5 @@
 ---
-title: "comparison is the thief of joy"
+title: "on comparison"
 date: "OCT 2025"
 ---
 
