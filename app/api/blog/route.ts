@@ -5,15 +5,15 @@ export const runtime = 'edge'
 // Static blog post metadata (content is read from markdown files at build time in the page component)
 const blogPosts = [
   {
-    slug: "lessons-learned-alone",
-    title: "lessons learned by being alone",
+    slug: "0.5-2025-reflection",
+    title: "1/2 2025 reflection",
     date: "AUG 2025",
     excerpt: "For a good part of my life, I had insane FOMO. I hated missing out on plans, on people, on moments.",
     content: "",
   },
   {
     slug: "comparison",
-    title: "comparison is the thief of joy",
+    title: "on comparison",
     date: "OCT 2025",
     excerpt: "For most of my life, I compared myself to everyone around me. In high school, I did not really know what I wanted to do.",
     content: "",
