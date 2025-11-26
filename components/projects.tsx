@@ -5,101 +5,236 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "VoiceVitals",
-    date: "SEPTEMBER 2025",
+    title: "AI Coding Mentor",
+    date: "NOVEMBER 2025",
     description:
-      "AI-powered voice recognition platform for health tracking. Features speech-to-text, symptom analysis, vital monitoring, and health insights powered by Google Gemini.",
-    detailedDescription: `The idea came from frustration. My friend was sick and couldn't be bothered to open her phone and type out all her symptoms. "I wish I could just talk to my phone and it would log everything," she said. That's when it clicked.
+      "Intelligent pair programming companion inspired by Grammarly. Real-time code analysis with visual highlighting, AI-powered explanations, code visualization, and interactive learning - making you a better programmer as you code.",
+    detailedDescription: `Have you ever used Grammarly and thought, "What if I had something like this for my code?" That exact question sparked the creation of AI Coding Mentor.
 
-What if health tracking was as simple as having a conversation? Instead of filling out forms or clicking through apps, you could just speak naturally – "I have a headache and I've been feeling tired all week" – and the app would understand, categorize, and track everything for you.
+Inspiration: From Grammarly to Code
 
-Why This Matters:
+Grammarly revolutionized writing by providing real-time feedback, explaining why something is wrong (not just what), and making learning seamless. I wanted to bring this same philosophy to programming.
 
-Healthcare is broken for accessibility. Seniors struggle with tiny buttons and confusing interfaces. People with disabilities can't navigate complex forms. Busy people don't have time to manually log everything. VoiceVitals makes health tracking accessible to everyone through natural speech.
+AI Coding Mentor isn't just another code editor or linter - it's your intelligent coding companion that teaches you as you code, highlights issues in real-time, explains the 'why' behind every suggestion, and grows with you as you learn.
 
-The vision was clear: speak naturally, get intelligent insights, track everything hands-free. No medical jargon required, no complicated forms, just talk like you're explaining to a friend.
+Traditional coding education separates learning from practice. You read tutorials, watch videos, then try to apply concepts in isolation. AI Coding Mentor flips this model - you learn by coding, and the AI guides you every step of the way.
 
-Building the Foundation:
+The Core Features:
 
-I started with the core: speech recognition. The Web Speech API seemed like the obvious choice, but I quickly realized it wasn't enough. The raw transcription was messy, full of "ums" and "likes," and didn't understand medical context at all.
+Real-Time Code Analysis: As you type, the AI analyzes your code with intelligent debouncing. It catches logic errors, performance issues, security vulnerabilities, best practices, and code smells - not just syntax errors.
 
-That's where Google Gemini came in. I built a pipeline where speech gets transcribed, then Gemini processes it to extract actual health data – symptoms, severity, duration, and context. It could understand "I've been coughing for three days" and automatically log it with proper timestamps and severity levels.
+Visual Code Highlighting: Every issue is color-coded with decorations:
 
-The AI integration was fascinating. Gemini 1.5 Flash with its 1M token context window could understand complex medical relationships. It recognized over 100 common symptoms, detected medications (both brand names and generics), assessed urgency levels, and provided evidence-based recommendations.
+• 🔴 Red for critical errors
+• 🟡 Yellow for warnings
+• 🔵 Blue for suggestions
+• 🟢 Green for best practices
 
-The Technical Challenge:
+Click any highlighted section for detailed explanations and fixes.
 
-The hardest part was making it feel natural and reliable. I had to:
+Comprehensive Scoring System: Get instant feedback on code quality with four key metrics: Correctness (does it work?), Clarity (is it readable?), Best Practices (following conventions?), and Performance (is it efficient?). Track your improvement over time.
 
-• Handle different accents and speech patterns across diverse users
-• Build a robust symptom extraction algorithm that understood medical terminology
-• Create a MongoDB schema that could handle flexible, unstructured health data
-• Implement real-time processing without lag or delays
-• Design a fallback system for when AI services were down
-• Ensure HIPAA-level security for sensitive health information
+AI-Powered Code Generation: Ask the AI in natural language like "Create a function that sorts a list of dictionaries by a specific key" and get generated code with explanations. You understand what it's doing and why.
 
-I spent weeks fine-tuning the Gemini prompts to get accurate symptom extraction. Too strict and it missed important details. Too loose and it extracted nonsense. The sweet spot required understanding medical context, colloquial language, and emotional indicators.
+Interactive Code Visualization: See your code execution step-by-step with execution flow diagrams, variable tracking, function call visualization, and data flow analysis. Perfect for understanding complex algorithms or debugging tricky logic.
 
-Building the Comprehensive Platform:
+Personalized Lessons: Every piece of code becomes a learning opportunity. The Lesson Generator creates custom educational content based on your code - concept explanations, algorithm breakdowns, language features, and best practices.
 
-VoiceVitals evolved into a complete health tracking ecosystem:
+Visual Code Diagrams: Generate beautiful Mermaid diagrams that visualize flowcharts, class diagrams, sequence diagrams, and state diagrams. Export as SVG for documentation or presentations.
 
-Voice-Powered Health Records: Users speak naturally about symptoms, medications, and concerns. AI analyzes the transcript, extracts structured data, assesses urgency (low/medium/high/critical), and provides personalized recommendations. Every recording is saved with audio playback for reference.
+Live Code Execution: Test your code instantly in a sandboxed environment with real-time output. Supports Python, Java, C++, C, C#, Go, Rust, Ruby, and PHP. All standard library modules and built-in functions work - import math, #include <iostream>, java.util.*, all ready to use.
 
-Vital Signs Monitoring: Track blood pressure, heart rate, temperature, and weight with intelligent color-coding. Red indicators for concerning values (BP ≥140/90, heart rate >100 BPM, temp ≥38°C), green for healthy ranges, blue for low values. The system learns your baseline and detects abnormal trends.
+Code Metrics Dashboard: Get comprehensive insights with real-time metrics visualization using Recharts. Track code statistics, structure analysis (functions, classes, imports), complexity metrics (cyclomatic complexity, nesting depth), code distribution, and line length analysis. Interactive charts update automatically as you type.
 
-Medication Management: Comprehensive tracking of prescriptions, dosages, schedules, and refills. The AI recognizes when you mention medications in voice recordings and automatically adds them to your tracker. Refill reminders ensure you never run out.
+Smart Code Formatting: One-click beautification that formats according to language-specific style guides (PEP 8 for Python, etc.), fixes indentation, organizes imports, and applies consistent naming conventions.
 
-Water Intake Tracking: Gamified hydration monitoring with daily goals, streak tracking, and achievement badges. Users log glasses of water throughout the day and get reminders to stay hydrated.
+Multi-Document Workspace: Work on multiple files simultaneously with a tabbed interface. Drag and drop tabs to reorder, each document maintains its own history and AI context. Perfect for working on related files or comparing implementations.
 
-AI-Powered Insights: Google Gemini analyzes your health history to identify patterns, correlations, and potential concerns. It notices things like "your headaches always occur after days with low water intake" or "your blood pressure spikes on stressful workdays."
+Code Sharing: Generate shareable links (expires in 30 days) perfect for code reviews, collaboration, or getting help. Recipients can view, analyze, and learn from your code.
 
-The Architecture:
+The Technical Architecture:
 
-Frontend: Built with Next.js 15 and TypeScript for type safety and performance. Tailwind CSS for responsive design. Framer Motion for smooth animations. The app works seamlessly on desktop, tablet, and mobile with automatic dark/light mode switching.
+Frontend: Built with React 18 and TypeScript for type safety. Monaco Editor (VS Code's editor) provides full IDE features - syntax highlighting, autocomplete, IntelliSense, code folding, find & replace. Recharts library powers the beautiful, responsive data visualizations in the metrics dashboard.
 
-Backend: Node.js with Express handles API routes. MongoDB with Mongoose for flexible data modeling. JWT authentication with bcrypt password hashing. Comprehensive input validation with Joi. Deployed on Railway with automatic scaling.
+Backend: FastAPI framework with async/await for high concurrency and automatic OpenAPI documentation. The backend orchestrates AI analysis and code execution with comprehensive error handling.
 
-Security was paramount: JWT tokens for stateless authentication, AES-256 encryption for sensitive data, HTTPS with TLS 1.3, input sanitization to prevent injection attacks, and GDPR-compliant data handling with full portability and deletion rights.
+AI Integration: Google Gemini AI provides deep code understanding with advanced analysis, context-aware suggestions, multi-language support, educational explanations, and natural language to code generation.
 
-Making It Accessible:
+Code Execution Service: Sandboxed environment with multi-language runtime support, timeout protection, resource limits, and detailed error capture. All standard libraries work - Python's math/json/datetime, Java's java.util.*, C++'s standard library headers, and more.
 
-Accessibility wasn't an afterthought – it was core to the design. I implemented:
+Code Metrics Service: Calculates real-time metrics including line counting, function/class/import detection, cyclomatic complexity analysis, nesting depth calculation, and language-specific pattern recognition.
 
-• High contrast mode for visual impairments
-• Full keyboard navigation for motor disabilities
-• Screen reader support with proper ARIA labels
-• Voice commands for hands-free operation
-• Large touch targets for mobile users
-• Clear language without medical jargon
-• Consistent layout for cognitive accessibility
+Database: PostgreSQL with SQLAlchemy ORM for history tracking (optional - app works without it). Stores past analyses, progress tracking, and achievements.
 
-The platform works for everyone: seniors who struggle with technology, people with disabilities who need accessible interfaces, busy professionals who want quick logging, and anyone preferring hands-free interaction.
+The Technical Challenges:
 
-The Dashboard Experience:
+Building this required solving multiple complex problems:
 
-The dashboard shows your health at a glance: recent recordings with AI analysis, vital signs with trend charts, upcoming medication schedules, water intake progress, and quick action buttons for recording new entries.
+Real-Time Analysis: Implementing intelligent debouncing to avoid overwhelming users while providing timely feedback. The AI analyzes code continuously but only surfaces insights when appropriate.
 
-Each health record displays the full transcript, extracted symptoms with severity ratings, detected medications, AI-generated summary, personalized recommendations, and urgency assessment. Users can play back the original audio and edit details if needed.
+Visual Feedback Integration: Integrating Monaco Editor decorations with AI suggestions required understanding the editor's API deeply. Color-coded highlights needed to be non-intrusive yet informative.
 
-The vitals page visualizes trends over time with interactive charts. Blood pressure graphs show systolic and diastolic values with target ranges. Heart rate trends highlight resting vs active measurements. Weight tracking shows progress toward goals.
+Sandboxed Code Execution: Running user code safely required creating isolated environments with timeout protection, resource limits, and error capture. Supporting eight languages (Python, Java, C++, C, C#, Go, Rust, Ruby, PHP) each required specific runtime configurations.
+
+Metrics Calculation: Building a robust metrics service that accurately counts lines, detects code structure, calculates complexity, and analyzes nesting depth across multiple languages required language-specific pattern recognition.
+
+Prompt Engineering: Crafting prompts for Gemini AI that produce consistent, high-quality educational content across wildly different code samples. Too strict and you lose creativity, too loose and you get nonsense. Finding the sweet spot required dozens of iterations.
+
+State Management: Each document maintains independent state - code, history, feedback, decorations, metrics. Managing this across multiple tabs with undo/redo functionality and localStorage persistence required careful architecture.
+
+Performance Optimization: Monaco Editor is heavy. Loading metrics calculations in real-time could lag the UI. I used Web Workers, throttling, caching, and efficient rendering to keep everything smooth at 60fps.
+
+The Learning Philosophy:
+
+AI Coding Mentor is built on five core principles:
+
+Contextual Learning: Learn from your actual code, not generic tutorials. The AI provides explanations tailored to what you're working on right now.
+
+Just-in-Time Feedback: Get feedback exactly when you need it - as you code. This reinforces learning and prevents bad habits from forming.
+
+Explanation, Not Just Correction: Every suggestion comes with a "why." You don't just learn what to change; you learn why it should be changed.
+
+Progressive Complexity: The AI adapts to your skill level. Beginners get simple, clear explanations. Advanced users get deep technical insights.
+
+Visual Learning: Diagrams and visualizations help you understand abstract concepts. See your code's execution flow, not just read about it.
+
+What Makes This Special:
+
+This isn't just an IDE - it's a learning platform. It combines the power of a full-featured code editor with intelligent AI assistance and educational tools.
+
+Whether you're a beginner writing your first print("Hello, World!"), an intermediate developer learning design patterns, an experienced programmer exploring a new language, or a student working on assignments - AI Coding Mentor adapts to your level and provides contextual, educational feedback that makes you a better programmer.
+
+The Beautiful, Modern UI:
+
+Dark/Light Mode: Choose your preferred theme, preference saved to localStorage
+Responsive Design: Works on desktop, tablet, and mobile
+Smooth Animations: Polished, professional interface with Framer Motion
+Keyboard Shortcuts: Ctrl+S to save, F5 to run, Ctrl+Enter to analyze, and more power-user features
+Achievement System: Gamify your learning with badges for milestones and progress tracking
 
 What I Learned:
 
-This project taught me that the best technology serves people who need it most. Building for accessibility makes products better for everyone. AI is powerful, but only when combined with thoughtful design and real-world testing.
+This project taught me about the intersection of education and technology. The best learning tools don't just provide information - they provide timely, contextual, actionable insights that meet learners exactly where they are.
 
-I learned about prompt engineering, healthcare data modeling, HIPAA compliance, voice UI design, real-time processing, and building systems that scale. But most importantly, I learned that engineering can genuinely improve lives.
+I learned about AI integration at a deep level. Working with Gemini AI required understanding how to structure prompts for consistency, handle context windows efficiently, and gracefully degrade when services are unavailable.
 
-My friend still uses VoiceVitals daily. Seeing her actually stick with health tracking – something she never did before – made every late night debugging session, every prompt iteration, and every accessibility refinement worth it.
+Building the metrics dashboard with Recharts taught me about data visualization principles. Good charts don't just display data - they reveal insights. I learned about progressive disclosure, interactive elements, and responsive design for visualizations.
 
-Healthcare technology shouldn't be complicated. It should just work, for everyone.
+The code execution service taught me about system security. Running untrusted code safely requires multiple layers of protection: sandboxing, timeouts, resource limits, and comprehensive error handling. One mistake could expose the system to arbitrary code execution.
+
+Most importantly, I learned that the best feedback is the feedback you don't notice. AI Coding Mentor works quietly in the background, surfacing insights exactly when you need them, never overwhelming you with information, always teaching through doing.
+
+The Impact:
+
+The most rewarding part has been watching people learn. Beginners who were intimidated by error messages now understand what they mean. Intermediate developers discover optimization techniques they'd never considered. Experienced programmers learning new languages get contextual explanations tailored to their existing knowledge.
+
+Code review became a learning opportunity. Instead of just sharing code for feedback, users share it with AI Coding Mentor, get comprehensive analysis, understand their mistakes, and learn before even asking a human reviewer. This makes human code reviews more productive - focused on architecture and design rather than syntax and basic best practices.
+
+AI Coding Mentor proves that AI can be an incredible teaching tool. Not a replacement for human mentorship, but a supplement that makes learning accessible, immediate, and personalized. Everyone deserves a coding mentor, and now everyone has one.
 
 `,
-    tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Google Gemini AI", "Web Speech API"],
-    liveUrl: "https://voice-vitals.vercel.app",
-    githubUrl: "https://github.com/Doris-Lam/VoiceVitals",
-    image: "/images/voicevitals.png",
+    tags: ["React", "TypeScript", "Monaco Editor", "FastAPI", "Python", "Google Gemini AI", "PostgreSQL", "Recharts"],
+    liveUrl: "https://youtu.be/s_eNUOBTzi8",
+    githubUrl: "https://github.com/Doris-Lam/My-AI-Mentor",
+    image: "/images/aimentor.png",
+    videoUrl: "https://www.youtube.com/embed/s_eNUOBTzi8",
   },
+//   {
+//     title: "VoiceVitals",
+//     date: "SEPTEMBER 2025",
+//     description:
+//       "AI-powered voice recognition platform for health tracking. Features speech-to-text, symptom analysis, vital monitoring, and health insights powered by Google Gemini.",
+//     detailedDescription: `The idea came from frustration. My friend was sick and couldn't be bothered to open her phone and type out all her symptoms. "I wish I could just talk to my phone and it would log everything," she said. That's when it clicked.
+
+// What if health tracking was as simple as having a conversation? Instead of filling out forms or clicking through apps, you could just speak naturally – "I have a headache and I've been feeling tired all week" – and the app would understand, categorize, and track everything for you.
+
+// Why This Matters:
+
+// Healthcare is broken for accessibility. Seniors struggle with tiny buttons and confusing interfaces. People with disabilities can't navigate complex forms. Busy people don't have time to manually log everything. VoiceVitals makes health tracking accessible to everyone through natural speech.
+
+// The vision was clear: speak naturally, get intelligent insights, track everything hands-free. No medical jargon required, no complicated forms, just talk like you're explaining to a friend.
+
+// Building the Foundation:
+
+// I started with the core: speech recognition. The Web Speech API seemed like the obvious choice, but I quickly realized it wasn't enough. The raw transcription was messy, full of "ums" and "likes," and didn't understand medical context at all.
+
+// That's where Google Gemini came in. I built a pipeline where speech gets transcribed, then Gemini processes it to extract actual health data – symptoms, severity, duration, and context. It could understand "I've been coughing for three days" and automatically log it with proper timestamps and severity levels.
+
+// The AI integration was fascinating. Gemini 1.5 Flash with its 1M token context window could understand complex medical relationships. It recognized over 100 common symptoms, detected medications (both brand names and generics), assessed urgency levels, and provided evidence-based recommendations.
+
+// The Technical Challenge:
+
+// The hardest part was making it feel natural and reliable. I had to:
+
+// • Handle different accents and speech patterns across diverse users
+// • Build a robust symptom extraction algorithm that understood medical terminology
+// • Create a MongoDB schema that could handle flexible, unstructured health data
+// • Implement real-time processing without lag or delays
+// • Design a fallback system for when AI services were down
+// • Ensure HIPAA-level security for sensitive health information
+
+// I spent weeks fine-tuning the Gemini prompts to get accurate symptom extraction. Too strict and it missed important details. Too loose and it extracted nonsense. The sweet spot required understanding medical context, colloquial language, and emotional indicators.
+
+// Building the Comprehensive Platform:
+
+// VoiceVitals evolved into a complete health tracking ecosystem:
+
+// Voice-Powered Health Records: Users speak naturally about symptoms, medications, and concerns. AI analyzes the transcript, extracts structured data, assesses urgency (low/medium/high/critical), and provides personalized recommendations. Every recording is saved with audio playback for reference.
+
+// Vital Signs Monitoring: Track blood pressure, heart rate, temperature, and weight with intelligent color-coding. Red indicators for concerning values (BP ≥140/90, heart rate >100 BPM, temp ≥38°C), green for healthy ranges, blue for low values. The system learns your baseline and detects abnormal trends.
+
+// Medication Management: Comprehensive tracking of prescriptions, dosages, schedules, and refills. The AI recognizes when you mention medications in voice recordings and automatically adds them to your tracker. Refill reminders ensure you never run out.
+
+// Water Intake Tracking: Gamified hydration monitoring with daily goals, streak tracking, and achievement badges. Users log glasses of water throughout the day and get reminders to stay hydrated.
+
+// AI-Powered Insights: Google Gemini analyzes your health history to identify patterns, correlations, and potential concerns. It notices things like "your headaches always occur after days with low water intake" or "your blood pressure spikes on stressful workdays."
+
+// The Architecture:
+
+// Frontend: Built with Next.js 15 and TypeScript for type safety and performance. Tailwind CSS for responsive design. Framer Motion for smooth animations. The app works seamlessly on desktop, tablet, and mobile with automatic dark/light mode switching.
+
+// Backend: Node.js with Express handles API routes. MongoDB with Mongoose for flexible data modeling. JWT authentication with bcrypt password hashing. Comprehensive input validation with Joi. Deployed on Railway with automatic scaling.
+
+// Security was paramount: JWT tokens for stateless authentication, AES-256 encryption for sensitive data, HTTPS with TLS 1.3, input sanitization to prevent injection attacks, and GDPR-compliant data handling with full portability and deletion rights.
+
+// Making It Accessible:
+
+// Accessibility wasn't an afterthought – it was core to the design. I implemented:
+
+// • High contrast mode for visual impairments
+// • Full keyboard navigation for motor disabilities
+// • Screen reader support with proper ARIA labels
+// • Voice commands for hands-free operation
+// • Large touch targets for mobile users
+// • Clear language without medical jargon
+// • Consistent layout for cognitive accessibility
+
+// The platform works for everyone: seniors who struggle with technology, people with disabilities who need accessible interfaces, busy professionals who want quick logging, and anyone preferring hands-free interaction.
+
+// The Dashboard Experience:
+
+// The dashboard shows your health at a glance: recent recordings with AI analysis, vital signs with trend charts, upcoming medication schedules, water intake progress, and quick action buttons for recording new entries.
+
+// Each health record displays the full transcript, extracted symptoms with severity ratings, detected medications, AI-generated summary, personalized recommendations, and urgency assessment. Users can play back the original audio and edit details if needed.
+
+// The vitals page visualizes trends over time with interactive charts. Blood pressure graphs show systolic and diastolic values with target ranges. Heart rate trends highlight resting vs active measurements. Weight tracking shows progress toward goals.
+
+// What I Learned:
+
+// This project taught me that the best technology serves people who need it most. Building for accessibility makes products better for everyone. AI is powerful, but only when combined with thoughtful design and real-world testing.
+
+// I learned about prompt engineering, healthcare data modeling, HIPAA compliance, voice UI design, real-time processing, and building systems that scale. But most importantly, I learned that engineering can genuinely improve lives.
+
+// My friend still uses VoiceVitals daily. Seeing her actually stick with health tracking – something she never did before – made every late night debugging session, every prompt iteration, and every accessibility refinement worth it.
+
+// Healthcare technology shouldn't be complicated. It should just work, for everyone.
+
+// `,
+//     tags: ["Next.js", "TypeScript", "React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Google Gemini AI", "Web Speech API"],
+//     liveUrl: "https://voice-vitals.vercel.app",
+//     githubUrl: "https://github.com/Doris-Lam/VoiceVitals",
+//     image: "/images/voicevitals.png",
+//   },
   
   {
     title: "Make It What You Want",
