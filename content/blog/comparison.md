@@ -3,7 +3,7 @@ title: "on comparison"
 date: "OCT 2025"
 ---
 
-## following the prestigious path
+## following "the path"
 
 When I look back at high school, I see a version of myself that was always looking around, constantly measuring against the people beside me. I did not really know what I wanted, so I gravitated toward paths that seemed prestigious, like STEM classes, coding programs, and math competitions. I did these things not because they excited me, but because I thought they would make me look competent and ambitious. I wanted to appear capable, like I had everything figured out, even when I did not.
 
@@ -27,13 +27,13 @@ I spent late nights scrolling through LinkedIn, comparing resumes and achievemen
 
 I remember one evening sitting on the floor of my dorm, laptop on my knees, endlessly checking emails for co-op postings. I felt drained, anxious, and inadequate even though I had worked hard and earned every opportunity I had. It was then that I began to realize how much pressure I had internalized and how little of it actually reflected what I truly valued.
 
-## psychological insight
+## reflection
 
-Eventually, I learned there was a name for what I had been experiencing. It is called upward social comparison. Psychologically, it is natural to measure yourself against those who seem more successful. It can motivate, but when self-worth depends on it, it becomes exhausting and destructive.
+It's natural to measure yourself against those who seem more successful. It can motivate, but when self-worth depends on it, it becomes exhausting and destructive.
 
 For me, this habit caused anxiety, self-doubt, and a distorted sense of achievement. I realized that I had spent so much time comparing myself to others that I lost sight of my own growth and accomplishments.
 
-The turning point came when I started asking myself difficult questions. Am I pursuing this because I want to or because I feel I should? Which accomplishments truly matter to me independent of what anyone else thinks? Slowly, I began to understand that comparison can inspire growth, but it should never define your worth. Fulfillment comes from self-awareness, reflection, and noticing progress on your own terms.
+The turning point came when I started asking myself difficult questions. Am I pursuing this because I want to or because I feel I should? Which accomplishments truly matter to me independent of what anyone else thinks? Through reflection, I began to understand that comparison can inspire growth, but it should never define your worth. Fulfillment comes from self-awareness, reflection, and noticing progress on your own terms.
 
 ## a work in progress
 
