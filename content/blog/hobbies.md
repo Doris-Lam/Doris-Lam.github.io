@@ -5,9 +5,9 @@ date: "DEC 2025"
 
 ## the realization
 
-I have realized something recently that has been quietly nagging at me: I have not really explored my entire life yet. I have not discovered what I can do, what I am capable of, or what brings me joy beyond the familiar paths I have already walked. There is so much out there, hobbies, experiences, skills, passions, that I have never even considered trying, and that realization feels both exciting and a little overwhelming.
+I came to a realization recently that has been quietly nagging at me: I have not really explored my entire life yet. I have not discovered what I can do, what I am capable of, or what brings me joy beyond the familiar paths I have already walked. There is so much out there, hobbies, experiences, skills, passions, that I have never even considered trying, and that realization feels both exciting and a little overwhelming.
 
-For most of my life, I have stuck to what I knew. I followed predictable patterns, stayed within comfortable boundaries, and rarely ventured into the unknown. I told myself I was being practical, focused, or simply too busy. But deep down, I think I was also a little afraid. Afraid of failure, afraid of looking foolish, afraid of investing time in something that might not work out.
+For pretty much my whole life, I have stuck to what I knew. I followed predictable patterns, stayed within comfortable boundaries, and rarely ventured into the unknown. I told myself I was being practical, focused, or simply too busy. But deep down, I think I was also a little afraid. Afraid of failure, afraid of looking foolish, afraid of investing time in something that might not work out.
 
 ## what I want to change
 
