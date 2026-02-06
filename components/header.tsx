@@ -33,7 +33,7 @@ export function Header(): React.JSX.Element {
               href="/projects" 
               className="px-6 py-2 rounded-full border-2 border-stone-900 dark:border-stone-100 text-stone-900 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-950 transition-colors text-sm font-light"
             >
-              work
+              projects
             </Link>
             <Link 
               href="/misc" 
