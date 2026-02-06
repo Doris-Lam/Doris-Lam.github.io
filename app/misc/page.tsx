@@ -1,7 +1,6 @@
 "use client"
 import { TopArtists } from "@/components/top-artists"
 import { TopAlbums } from "@/components/top-albums"
-import { Blog } from "@/components/blog"
 
 export default function MiscPage() {
   return (
@@ -16,9 +15,6 @@ export default function MiscPage() {
                 things i write, listen to, and care about
               </p>
             </div>
-
-            {/* Blog Section */}
-            <Blog />
 
             {/* Top Artists This Week */}
             <section className="space-y-6">
