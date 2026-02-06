@@ -15,9 +15,18 @@ const slides = [
 
 const roles = [
   {
+    company: "solana",
+    title: "software engineering fellow",
+    period: "feb 2026 - present",
+    logo: "/icons/solana.jpeg",
+    bgColor: "bg-white dark:bg-stone-800",
+    isImage: true,
+    description: "solana x mlh fellowship"
+  },
+  {
     company: "voxer",
     title: "software engineer",
-    period: "sep 2025 - present",
+    period: "sep 2025 - dec 2025",
     logo: "/icons/voxer.png",
     bgColor: "bg-white dark:bg-stone-800",
     isImage: true,
@@ -60,10 +69,10 @@ export function MainContent(): React.JSX.Element {
   }, []);
 
   return (
-    <div className="w-full min-h-screen flex items-start justify-center px-4 sm:px-6 pt-14 md:pt-16 pb-12">
+    <div className="w-full min-h-screen flex items-start justify-center px-4 sm:px-6 pt-10 md:pt-12 pb-12">
       <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
         {/* Main Content - Left Side */}
-        <div className="w-full lg:w-1/2 space-y-8">
+        <div className="w-full lg:w-1/2 space-y-6">
         {/* Header */}
         <div className="space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-stone-900 dark:text-stone-100">
@@ -82,9 +91,6 @@ export function MainContent(): React.JSX.Element {
           <div className="space-y-3 text-sm sm:text-base md:text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
             <p>
               i'm a computer engineering student at the university of waterloo who spends most of her time building stuff that's functional and fun
-            </p>
-            <p>
-              i'm interested in creating impact at the intersection of human-centered design, full-stack engineering, and ai wizardry
             </p>
             <div>
               in my spare time, you can find me{" "}
@@ -167,19 +173,19 @@ export function MainContent(): React.JSX.Element {
         </div>
 
         {/* Recent Roles */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           <h2 className="text-base sm:text-lg md:text-xl font-light text-stone-700 dark:text-stone-300">
             what i'm up to:
           </h2>
-          
+
           <div className="space-y-2">
             {roles.map((role, index) => (
               <div 
                 key={index}
                 className="relative"
               >
-                <div 
-                  className="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-950 transition-all duration-200 cursor-pointer"
+                <div
+                  className="flex items-center justify-between p-3 rounded-xl bg-white dark:bg-stone-900 border-2 border-stone-900 dark:border-stone-100 hover:bg-stone-100 dark:hover:bg-stone-950 transition-all duration-200 cursor-pointer"
                   onClick={() => setExpandedRole(expandedRole === index ? null : index)}
                 >
                   <div className="flex items-center gap-3">
