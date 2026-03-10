@@ -16,7 +16,7 @@ const slides = [
 const roles = [
   {
     company: "solana",
-    title: "software engineering",
+    title: "software engineer",
     period: "feb 2026 - present",
     logo: "/icons/solana.jpeg",
     bgColor: "bg-white dark:bg-stone-800",
