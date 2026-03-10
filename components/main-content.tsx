@@ -16,12 +16,12 @@ const slides = [
 const roles = [
   {
     company: "solana",
-    title: "software engineering fellow",
+    title: "software engineering",
     period: "feb 2026 - present",
     logo: "/icons/solana.jpeg",
     bgColor: "bg-white dark:bg-stone-800",
     isImage: true,
-    description: "solana x mlh fellowship"
+    description: "Data benchmarking platform for Solana ecosystem metrics"
   },
   {
     company: "voxer",
