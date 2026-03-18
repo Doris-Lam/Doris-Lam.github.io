@@ -6,7 +6,7 @@ import Image from "next/image"
 const projects = [
   {
     title: "AI Coding Mentor",
-    date: "NOVEMBER 2025",
+    date: "NOVEMBER 2025 - JANUARY 2026",
     description:
       "Intelligent pair programming companion inspired by Grammarly. Real-time code analysis with visual highlighting, AI-powered explanations, code visualization, and interactive learning - making you a better programmer as you code.",
     detailedDescription: `Have you ever used Grammarly and thought, "What if I had something like this for my code?" That exact question sparked the creation of AI Coding Mentor.
@@ -939,7 +939,7 @@ export function Projects(): React.JSX.Element {
                         {project.title}
                       </h3>
                       <p className="text-[11px] sm:text-xs text-stone-500 dark:text-stone-500 mt-1 uppercase tracking-wider">
-                        {project.date} - COMPLETED
+                        {project.date} - {project.status ?? "COMPLETED"}
                       </p>
                     </div>
                     <div className="flex gap-2 flex-shrink-0">
