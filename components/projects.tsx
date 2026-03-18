@@ -3,7 +3,20 @@ import React, { useState } from "react"
 import { ExternalLink, Github, X } from "lucide-react"
 import Image from "next/image"
 
-const projects = [
+type Project = {
+  title: string
+  date: string
+  status?: string
+  description: string
+  detailedDescription: string
+  tags: string[]
+  liveUrl: string
+  githubUrl: string
+  image: string
+  videoUrl?: string
+}
+
+const projects: Project[] = [
   {
     title: "AI Coding Mentor",
     date: "NOVEMBER 2025 - JANUARY 2026",
