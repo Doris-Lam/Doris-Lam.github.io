@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'BrotherSignature';
-  src: url('/fonts/BrotherSignature-7BWnK.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,31 +10,6 @@ body {
 .font-serif {
   font-feature-settings: "ss01";
   letter-spacing: -0.01em;
-}
-
-@layer base {
-  :root {
-    --background: 44 13% 96%;
-    --foreground: 25 5% 15%;
-    --card: 0 0% 100%;
-    --card-foreground: 25 5% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 25 5% 15%;
-    --primary: 25 5% 15%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 44 13% 91%;
-    --secondary-foreground: 25 5% 15%;
-    --muted: 44 13% 91%;
-    --muted-foreground: 25 5% 45%;
-    --accent: 44 13% 91%;
-    --accent-foreground: 25 5% 15%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 44 13% 87%;
-    --input: 44 13% 87%;
-    --ring: 25 5% 15%;
-    --radius: 0.75rem;
-  }
 }
 
 @layer base {
@@ -59,23 +27,5 @@ body {
   }
   button {
     @apply transition-all duration-200;
-  }
-}
-
-@keyframes wiggle {
-  0%, 100% {
-    transform: rotate(-3deg);
-  }
-  50% {
-    transform: rotate(3deg);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
   }
 }
