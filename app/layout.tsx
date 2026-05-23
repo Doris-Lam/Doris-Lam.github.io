@@ -22,6 +22,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Doris Lam",
   description: "Software engineer building accessible and impactful solutions",
+  icons: { icon: "/icon.png" },
 };
 
 export default function RootLayout({
