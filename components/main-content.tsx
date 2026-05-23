@@ -27,7 +27,8 @@ const roles: Role[] = [
     period: "feb 2026 - may 2026",
     logo: "/icons/solana.jpeg",
     isImage: true,
-    description: "data benchmarking platform for solana ecosystem metrics",
+    description:
+      "developed a blockchain analytics platform benchmarking solana ecosystem metrics across data providers",
   },
   {
     company: "voxer",
@@ -36,7 +37,7 @@ const roles: Role[] = [
     logo: "/icons/voxer.png",
     isImage: true,
     description:
-      "building and scaling communication infrastructure for real-time voice and messaging applications",
+      "built and scaled communication infrastructure for real-time voice and messaging applications",
   },
   {
     company: "hormonefit",
@@ -44,7 +45,7 @@ const roles: Role[] = [
     period: "may 2025 — aug 2025",
     logo: <Leaf className="w-4 h-4 text-green-700 dark:text-green-400" />,
     description:
-      "launched a cost-effective hipaa-compliant telehealth platform for menopause and infertility patients in ontario",
+      "launched a hipaa-compliant telehealth platform for menopause and infertility patients",
   }
 ]
 
