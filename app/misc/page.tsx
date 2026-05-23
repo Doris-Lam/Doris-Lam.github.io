@@ -27,7 +27,7 @@ export default function MiscPage() {
               top artists this week
             </h2>
             <p className="text-sm text-stone-500 dark:text-stone-500 italic">
-              what i&apos;ve been listening to lately
+              who i&apos;ve been listening to lately
             </p>
           </div>
           <TopArtists />
@@ -36,10 +36,10 @@ export default function MiscPage() {
         <section className="space-y-6">
           <div className="space-y-1">
             <h2 className="font-serif text-2xl md:text-3xl text-stone-900 dark:text-stone-100 tracking-tight">
-              favourite albums
+              recently listened albums
             </h2>
             <p className="text-sm text-stone-500 dark:text-stone-500 italic">
-              albums that have been on repeat
+              what i&apos;ve been listening to lately
             </p>
           </div>
           <TopAlbums />
