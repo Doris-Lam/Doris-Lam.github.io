@@ -1,19 +1,23 @@
-"use client"
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { use } from "react"
 import {
   projects,
   slugify,
   ProjectDetailBody,
 } from "@/components/projects"
 
-export default function ProjectDetailPage({
+export function generateStaticParams() {
+  return projects.map((p) => ({ slug: slugify(p.title) }))
+}
+
+export const dynamicParams = false
+
+export default async function ProjectDetailPage({
   params,
 }: {
   params: Promise<{ slug: string }>
 }) {
-  const { slug } = use(params)
+  const { slug } = await params
   const project = projects.find((p) => slugify(p.title) === slug)
 
   if (!project) {
