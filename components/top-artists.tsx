@@ -33,47 +33,41 @@ export function TopArtists() {
 
   if (loading) {
     return (
-      <div className="px-4 py-3 border-2 border-stone-900 dark:border-stone-100 rounded-lg bg-stone-50 dark:bg-stone-800">
-        <div className="flex items-center gap-3 mb-3">
-          <Music className="w-5 h-5 text-stone-500 animate-pulse" />
-          <div className="text-sm font-medium text-stone-500 dark:text-stone-400">
-            loading top artists...
-          </div>
-        </div>
+      <div className="flex items-center gap-2 text-sm italic text-stone-500 dark:text-stone-500">
+        <Music className="w-4 h-4 animate-pulse" />
+        loading top artists...
       </div>
     )
   }
 
   if (!artists || artists.length === 0) {
     return (
-      <div className="px-4 py-3 border-2 border-stone-900 dark:border-stone-100 rounded-lg bg-stone-50 dark:bg-stone-800">
-        <div className="flex items-center gap-3">
-          <Music className="w-5 h-5 text-stone-500" />
-          <div className="text-sm text-stone-500 dark:text-stone-400">
-            no top artists data available
-          </div>
-        </div>
+      <div className="flex items-center gap-2 text-sm italic text-stone-500 dark:text-stone-500">
+        <Music className="w-4 h-4" />
+        no top artists data available
       </div>
     )
   }
 
   return (
-    <div className="flex flex-wrap gap-2 sm:gap-3">
+    <div className="flex flex-wrap gap-x-3 gap-y-2">
       {artists.map((artist, index) => (
         <div
           key={index}
-          className="inline-flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 border-2 border-stone-900 dark:border-stone-100 rounded-full bg-stone-50 dark:bg-stone-800"
+          className="inline-flex items-center gap-2 py-1.5 pr-3 pl-1 rounded-full ring-1 ring-stone-200 dark:ring-stone-800 bg-white/40 dark:bg-stone-900/40 hover:ring-stone-400 dark:hover:ring-stone-600 transition-colors"
         >
           {artist.image ? (
             <img
               src={artist.image}
               alt={artist.name}
-              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full object-cover"
+              className="w-6 h-6 rounded-full object-cover"
             />
           ) : (
-            <Music className="w-5 h-5 text-stone-500" />
+            <span className="w-6 h-6 rounded-full flex items-center justify-center text-stone-500">
+              <Music className="w-3 h-3" />
+            </span>
           )}
-          <span className="text-sm font-medium text-stone-900 dark:text-stone-100">
+          <span className="font-serif text-sm text-stone-800 dark:text-stone-200">
             {artist.name}
           </span>
         </div>

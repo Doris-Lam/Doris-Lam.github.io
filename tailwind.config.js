@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'brother-signature': ['BrotherSignature', 'cursive'],
+        serif: ['var(--font-serif)', 'Georgia', 'serif'],
+        sans: ['var(--font-mono)', 'ui-monospace', 'monospace'],
+        mono: ['var(--font-mono)', 'ui-monospace', 'monospace'],
       },
     },
   },
