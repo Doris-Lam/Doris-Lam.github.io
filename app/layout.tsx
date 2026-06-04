@@ -45,7 +45,7 @@ export default function RootLayout({
         className={`${fraunces.variable} ${ibmPlexMono.variable} antialiased`}
         suppressHydrationWarning
       >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="min-h-screen bg-[#f7f4ee] text-stone-900 dark:bg-stone-950 dark:text-stone-100 transition-colors duration-300">
             <div className="flex flex-col min-h-screen">
               <Header />
