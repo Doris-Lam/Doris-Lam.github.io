@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import Link from "next/link"
 
 export function Header(): React.JSX.Element {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   useEffect(() => {
@@ -40,12 +40,12 @@ export function Header(): React.JSX.Element {
               resume
             </a>
             <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
               className="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors"
               aria-label="Toggle theme"
             >
               {mounted &&
-                (theme === "dark" ? (
+                (resolvedTheme === "dark" ? (
                   <Sun className="w-4 h-4" />
                 ) : (
                   <Moon className="w-4 h-4" />
@@ -88,10 +88,10 @@ export function Header(): React.JSX.Element {
               resume
             </a>
             <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
               className="text-left text-sm text-stone-600 dark:text-stone-400"
             >
-              {mounted && (theme === "dark" ? "light mode" : "dark mode")}
+              {mounted && (resolvedTheme === "dark" ? "light mode" : "dark mode")}
             </button>
           </div>
         )}
