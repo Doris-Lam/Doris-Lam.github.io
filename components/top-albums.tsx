@@ -17,7 +17,7 @@ export function TopAlbums() {
   useEffect(() => {
     const fetchTopAlbums = async () => {
       try {
-        const response = await fetch("/api/spotify/top-albums")
+        const response = await fetch("/music/top-albums.json")
         if (response.ok) {
           const data = await response.json()
           setAlbums(data.albums)

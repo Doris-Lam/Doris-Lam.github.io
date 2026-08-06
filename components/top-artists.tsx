@@ -16,7 +16,7 @@ export function TopArtists() {
   useEffect(() => {
     const fetchTopArtists = async () => {
       try {
-        const response = await fetch("/api/spotify/top-artists")
+        const response = await fetch("/music/top-artists.json")
         if (response.ok) {
           const data = await response.json()
           setArtists(data.artists)

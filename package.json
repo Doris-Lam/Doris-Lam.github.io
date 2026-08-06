@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "fetch-music": "node scripts/fetch-music.mjs",
+    "prebuild": "node scripts/fetch-music.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

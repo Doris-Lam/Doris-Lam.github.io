@@ -5,7 +5,6 @@ import { ThemeProvider } from "next-themes";
 import { PageTransition } from "@/components/page-transition";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { DinoGame } from "@/components/dino-game";
 
 const fraunces = Fraunces({
   variable: "--font-serif",
@@ -33,7 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="preload" as="image" href="/dino-sprite.png" />
         <script
           dangerouslySetInnerHTML={{
             __html:
@@ -55,7 +53,6 @@ export default function RootLayout({
                 </PageTransition>
               </div>
               <Footer />
-              <DinoGame />
             </div>
           </div>
         </ThemeProvider>

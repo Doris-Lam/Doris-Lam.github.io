@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+# generated at build time by scripts/fetch-music.mjs
+/public/music/top-artists.json
+/public/music/top-albums.json
+
 # production
 /build
 
