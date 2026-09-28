@@ -36,7 +36,7 @@ const roles: Role[] = [
   {
     company: "voxer",
     title: "software engineering intern",
-    period: "sep 2025 — dec 2025",
+    period: "sep 2025 - dec 2025",
     logo: "/icons/voxer.png",
     isImage: true,
     description:
@@ -45,7 +45,7 @@ const roles: Role[] = [
   {
     company: "hormonefit",
     title: "engineering intern",
-    period: "may 2025 — aug 2025",
+    period: "may 2025 - aug 2025",
     logo: <Leaf className="w-4 h-4 text-green-700 dark:text-green-400" />,
     description:
       "launched a hipaa-compliant telehealth platform",

@@ -6,6 +6,7 @@ import { PageTransition } from "@/components/page-transition";
 import { Footer } from "@/components/footer";
 import { DinoGame } from "@/components/dino-game";
 import { ClickSound } from "@/components/click-sound";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 // Söhne is Voxer's UI typeface but is a licensed Klim font, so this uses
 // Inter — the fallback named in tri-nyc/design-system's own font tokens.
@@ -43,7 +44,12 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="min-h-screen bg-[#f7f4ee] text-stone-900 dark:bg-stone-950 dark:text-stone-100 transition-colors duration-300">
             <div className="flex flex-col min-h-screen">
-              <div className="flex-1 pt-16 md:pt-20">
+              <div className="w-full px-6 sm:px-8 md:px-12 pt-10 md:pt-14">
+                <div className="w-full max-w-5xl mx-auto flex justify-end">
+                  <ThemeToggle />
+                </div>
+              </div>
+              <div className="flex-1 pt-6 md:pt-8">
                 <PageTransition>
                   {children}
                 </PageTransition>
