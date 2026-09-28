@@ -53,12 +53,13 @@ export function DinoGame(): React.JSX.Element {
     let raf = 0
     let mounted = true
 
-    const isMobile = () => window.innerWidth < 640
-    let DINO_X = isMobile() ? 24 : 56
+    let viewW = canvas.parentElement?.clientWidth ?? window.innerWidth
+    let DINO_X = viewW < 640 ? 24 : 56
 
     const setSize = () => {
-      DINO_X = isMobile() ? 24 : 56
-      const w = window.innerWidth
+      viewW = canvas.parentElement?.clientWidth ?? window.innerWidth
+      DINO_X = viewW < 640 ? 24 : 56
+      const w = viewW
       canvas.width = Math.floor(w * dpr)
       canvas.height = Math.floor(CANVAS_H * dpr)
       canvas.style.width = w + "px"
@@ -75,7 +76,7 @@ export function DinoGame(): React.JSX.Element {
     }
 
     const obstacles: Obstacle[] = []
-    const W0 = window.innerWidth
+    const W0 = viewW
     const clouds: CloudInst[] = [
       { x: W0 * 0.08, y: 24 },
       { x: W0 * 0.24, y: 8 },
@@ -95,7 +96,7 @@ export function DinoGame(): React.JSX.Element {
       const isLarge = Math.random() > 0.55
       const sprite = isLarge ? SPRITES.CACTUS_L1 : SPRITES.CACTUS_S1
       return {
-        x: window.innerWidth + 20,
+        x: viewW + 20,
         sprite,
         trigger: isLarge ? TRIGGER_L : TRIGGER_S,
       }
@@ -105,7 +106,7 @@ export function DinoGame(): React.JSX.Element {
       if (!mounted) return
       const dt = lastT ? Math.min(0.05, (t - lastT) / 1000) : 0.016
       lastT = t
-      const W = window.innerWidth
+      const W = viewW
 
       for (const c of clouds) {
         c.x -= SCROLL_SPEED * 0.2 * dt
@@ -199,7 +200,7 @@ export function DinoGame(): React.JSX.Element {
     >
       <canvas
         ref={canvasRef}
-        className="fixed inset-x-0 bottom-0 block w-full dark:invert"
+        className="block w-full dark:invert"
         style={{ height: `${CANVAS_H}px`, imageRendering: "pixelated" }}
       />
     </div>
