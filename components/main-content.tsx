@@ -67,7 +67,7 @@ export function MainContent(): React.JSX.Element {
             </h1>
 
             <p className="text-sm md:text-base text-stone-700 dark:text-stone-300 leading-relaxed max-w-xl">
-              currently a software engineer at trinity labs & studying computer engineering student at the university of waterloo. i care about building tools that are open, thoughtful, and made for the people who use them. in my free time you can catch me
+              currently an engineer at trinity labs & studying computer engineering student at the university of waterloo. i care about building tools that are open, thoughtful, and made for the people who use them. in my free time you can catch me
   {" "}
               <span className={highlight}>hiking</span>
               ,{" "}
