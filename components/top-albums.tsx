@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useState } from "react"
 import { Disc3 } from "lucide-react"
-
 interface Album {
   name: string
   artist: string
@@ -10,7 +9,7 @@ interface Album {
   playcount: string
 }
 
-export function TopAlbums() {
+export function TopAlbums({ limit }: { limit?: number }) {
   const [albums, setAlbums] = useState<Album[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -52,7 +51,7 @@ export function TopAlbums() {
 
   return (
     <div className="grid grid-cols-3 xs:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
-      {albums.map((album, index) => (
+      {albums.slice(0, limit).map((album, index) => (
         <div key={index} className="group relative">
           <div className="relative aspect-square overflow-hidden rounded-md ring-1 ring-stone-200 dark:ring-stone-800 group-hover:ring-stone-400 dark:group-hover:ring-stone-600 transition-all">
             {album.image ? (
@@ -69,8 +68,8 @@ export function TopAlbums() {
           </div>
           <div className="hidden sm:block absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10 w-max max-w-[200px]">
             <div className="bg-stone-900 dark:bg-stone-100 text-stone-50 dark:text-stone-900 rounded-md px-3 py-2 shadow-lg text-center">
-              <div className="font-serif text-sm leading-tight">{album.name}</div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500 mt-0.5">
+              <div className="font-sans text-sm leading-tight">{album.name}</div>
+              <div className="text-[10px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500 mt-0.5">
                 {album.artist}
               </div>
             </div>

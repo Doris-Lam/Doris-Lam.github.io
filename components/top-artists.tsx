@@ -67,7 +67,7 @@ export function TopArtists() {
               <Music className="w-3 h-3" />
             </span>
           )}
-          <span className="font-serif text-sm text-stone-800 dark:text-stone-200">
+          <span className="font-sans text-sm text-stone-800 dark:text-stone-200">
             {artist.name}
           </span>
         </div>

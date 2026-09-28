@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-mono), ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-family: var(--font-sans), Inter, Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
-.font-serif {
-  font-feature-settings: "ss01";
+/* Voxer's type scale: display -2%, headline -1% tracking. */
+.font-sans {
   letter-spacing: -0.01em;
 }
 
